@@ -31,7 +31,7 @@ var checkHour = function() {
 //save button
 $('.saveBtn').click(function() {
     //get value
-    var text = $(this).siblings('textarea').val()//.trim();
+    var text = $(this).siblings('textarea').val();
     var time = $(this).siblings('textarea').data('hour');
     //set values
     localStorage.setItem(time, text);
